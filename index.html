@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Meet the St. Clair College Graphic Design Club, explore student projects, watch tutorials, and get in touch.">
+    <title>Graphic Design Club | St. Clair College</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Kode+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="header-inner">
+          <a class="brand" href="#top" aria-label="Graphic Design Club home">
+            <img src="assets/club-logo.svg" alt="Graphic Design Club">
+          </a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+            <span class="menu-toggle-label">Menu</span>
+            <span class="menu-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+          </button>
+          <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+            <a href="#look">Projects</a>
+            <a href="#members">Members</a>
+            <a href="#tutorials">Tutorials</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
+          <img class="hero-background" src="assets/hero-background.jpeg" alt="">
+          <h1 id="hero-title">
+            <span>Welcome to</span>
+            <span>St. Clair College’s</span>
+            <span>Graphic Design</span>
+            <span>Club!</span>
+          </h1>
+          <span class="hero-arrow hero-arrow-left" aria-hidden="true">‹</span>
+          <span class="hero-arrow hero-arrow-right" aria-hidden="true">›</span>
+          <p class="photo-credit">Photo by Addam Setzer</p>
+        </section>
+
+        <section class="explore" id="look" aria-labelledby="explore-title">
+          <div class="section-heading">
+            <h2 id="explore-title">Take a look at...</h2>
+            <span aria-hidden="true"></span>
+          </div>
+          <div class="explore-grid">
+            <div class="explore-column explore-column-left">
+              <a class="entry-card student-card" href="#featured">
+                <h3>Student<br>Projects</h3>
+                <span class="paper-stack" aria-hidden="true"><span></span><span></span></span>
+              </a>
+              <a class="entry-card about-card" id="about" href="#contact">
+                <h3>About<br>Us</h3>
+                <img class="about-icon" src="assets/about-icon.svg" alt="" aria-hidden="true">
+              </a>
+            </div>
+            <div class="explore-column explore-column-right">
+              <a class="entry-card members-card" id="members" href="#featured">
+                <h3>Our<br>Members</h3>
+                <img class="members-icon" src="assets/members.svg" alt="" aria-hidden="true">
+              </a>
+              <a class="entry-card tutorials-card" href="#tutorials">
+                <h3>Engaging<br>Tutorials</h3>
+                <img class="tutorials-icon" src="assets/tutorials-play.svg" alt="" aria-hidden="true">
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="featured" id="featured" aria-labelledby="featured-title">
+          <div class="section-heading">
+            <h2 id="featured-title">This weeks featured...</h2>
+            <span aria-hidden="true"></span>
+          </div>
+          <div class="project-grid">
+            <article class="project-card project-card-blue">
+              <div class="project-copy"><h3>Designers name</h3><p>Project title</p></div>
+              <span class="project-paper" aria-hidden="true"></span>
+              <img src="assets/project-portrait.svg" alt="" aria-hidden="true">
+            </article>
+            <article class="project-card project-card-yellow">
+              <div class="project-copy"><h3>Designers name</h3><p>Project title</p></div>
+              <span class="project-paper" aria-hidden="true"></span>
+              <img src="assets/project-portrait.svg" alt="" aria-hidden="true">
+            </article>
+            <article class="project-card project-card-pink">
+              <div class="project-copy"><h3>Designers name</h3><p>Project title</p></div>
+              <span class="project-paper" aria-hidden="true"></span>
+              <img src="assets/project-portrait.svg" alt="" aria-hidden="true">
+            </article>
+            <article class="project-card project-card-green">
+              <div class="project-copy"><h3>Designers name</h3><p>Project title</p></div>
+              <span class="project-paper" aria-hidden="true"></span>
+              <img src="assets/project-portrait.svg" alt="" aria-hidden="true">
+            </article>
+          </div>
+        </section>
+
+        <section class="tutorials" id="tutorials" aria-labelledby="tutorials-title">
+          <div class="section-heading">
+            <h2 id="tutorials-title">Recent Tutorials...</h2>
+            <span aria-hidden="true"></span>
+          </div>
+          <div class="video-preview" role="img" aria-label="Video preview: Tutorial Name. Video link not provided.">
+            <img src="assets/video-play.svg" alt="" aria-hidden="true">
+            <span>Tutorial Name</span>
+          </div>
+        </section>
+
+        <section class="contact" id="contact" aria-labelledby="contact-title">
+          <div class="section-heading">
+            <h2 id="contact-title">Contact our designers...</h2>
+            <span aria-hidden="true"></span>
+          </div>
+          <div class="contact-panel">
+            <p class="contact-intro">Do you wish to hire or collaborate<br class="desktop-break"> with our designers? Send us an email,<br class="desktop-break"> and we’ll do the connecting :)</p>
+            <form class="contact-form">
+              <label class="visually-hidden" for="contact-name">Your Name / Company</label>
+              <input id="contact-name" name="name" type="text" placeholder="Your Name / Company" required>
+              <label class="visually-hidden" for="contact-email">E-mail</label>
+              <input id="contact-email" name="email" type="email" placeholder="E-mail" required>
+              <label class="visually-hidden" for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" placeholder="Message" rows="1" required></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-logo-wrap">
+          <img class="footer-logo" src="assets/footer-logo.svg" alt="Graphic Design Club">
+        </div>
+        <nav class="footer-navigation" aria-label="Footer">
+          <a href="#contact">Contact</a>
+          <span>Privacy Policy</span>
+          <span>Social Media Policy</span>
+          <span>Status Updates</span>
+          <span>Cookie Settings</span>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>
